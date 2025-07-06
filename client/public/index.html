@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1976d2" />
+    
+    <!-- Professional Meta Tags -->
+    <meta name="description" content="NSTI Dehradun College Management System - Professional digital infrastructure for academic administration, library management, and institutional operations." />
+    <meta name="keywords" content="NSTI, Dehradun, College Management, Education, Library Management, Student Portal, Government Institute" />
+    <meta name="author" content="NSTI Dehradun Development Team" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="NSTI Dehradun - College Management System" />
+    <meta property="og:description" content="Professional digital infrastructure for seamless academic administration and institutional operations." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%PUBLIC_URL%/nsti-logo.png" />
+    <meta property="og:url" content="https://nsti-dehradun.edu.in" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NSTI Dehradun - College Management System" />
+    <meta name="twitter:description" content="Professional digital infrastructure for seamless academic administration." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/nsti-logo.png" />
+    
+    <!-- Professional Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#1976d2" />
+    <meta name="msapplication-TileColor" content="#1976d2" />
+    
+    <!-- Google Fonts - Professional Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    
+    <!-- Professional Title -->
+    <title>NSTI Dehradun - College Management System | Government Institute</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    
+    <!-- Performance Optimization -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
+    
+    <!-- Professional Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "NSTI Dehradun",
+      "description": "National Skill Training Institute - Professional technical education and skill development",
+      "url": "https://nsti-dehradun.edu.in",
+      "logo": "https://nsti-dehradun.edu.in/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dehradun",
+        "addressRegion": "Uttarakhand",
+        "addressCountry": "India"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Admissions",
+        "telephone": "+91-135-XXXXXXX"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <div style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #1976d2, #42a5f5);
+        color: white;
+        text-align: center;
+        padding: 20px;
+      ">
+        <div>
+          <h1>JavaScript Required</h1>
+          <p>NSTI Dehradun College Management System requires JavaScript to function properly.</p>
+          <p>Please enable JavaScript in your browser settings and refresh the page.</p>
+        </div>
+      </div>
+    </noscript>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1976d2, #42a5f5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    ">
+      <div style="text-align: center; color: white;">
+        <div style="
+          width: 60px;
+          height: 60px;
+          border: 4px solid rgba(255,255,255,0.3);
+          border-top: 4px solid white;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+          margin: 0 auto 20px;
+        "></div>
+        <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 600;">NSTI Dehradun</h2>
+        <p style="margin: 10px 0 0; font-family: 'Inter', sans-serif; opacity: 0.9;">Loading College Management System...</p>
+      </div>
+    </div>
+    
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Hide loading screen after page loads */
+      .loaded #loading-screen {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+    
+    <script>
+      // Hide loading screen when page is fully loaded
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.body.classList.add('loaded');
+          setTimeout(function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+              loadingScreen.style.display = 'none';
+            }
+          }, 500);
+        }, 1000);
+      });
+    </script>
+    
+    <div id="root"></div>
+  </body>
+</html>

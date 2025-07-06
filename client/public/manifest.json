@@ -1,0 +1,98 @@
+{
+  "short_name": "NSTI CMS",
+  "name": "NSTI Dehradun College Management System",
+  "description": "Professional digital infrastructure for seamless academic administration, library management, and institutional operations at NSTI Dehradun.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "start_url": "/login",
+  "display": "standalone",
+  "theme_color": "#1976d2",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["education", "productivity", "business"],
+  "screenshots": [
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Access your personalized dashboard",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "dashboard-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Library",
+      "short_name": "Library",
+      "description": "Browse and manage library resources",
+      "url": "/dashboard/library",
+      "icons": [
+        {
+          "src": "library-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Store",
+      "short_name": "Store",
+      "description": "Manage inventory and store requests",
+      "url": "/dashboard/store",
+      "icons": [
+        {
+          "src": "store-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}

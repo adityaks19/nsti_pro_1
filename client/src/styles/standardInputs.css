@@ -1,0 +1,30 @@
+
+/* Standard Input Field Styles */
+.standard-input {
+  width: 100%;
+  height: 56px;
+  font-size: 1rem;
+}
+
+.standard-input .MuiOutlinedInput-root {
+  height: 56px;
+}
+
+.standard-input .MuiInputLabel-root {
+  font-size: 1rem;
+}
+
+.standard-input .MuiOutlinedInput-input {
+  font-size: 1rem;
+  padding: 16px 14px;
+}
+
+.standard-select {
+  width: 100%;
+  height: 56px;
+}
+
+.standard-select .MuiSelect-select {
+  padding: 16px 14px;
+  font-size: 1rem;
+}

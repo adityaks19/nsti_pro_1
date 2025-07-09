@@ -1,39 +1,44 @@
 {
-  "name": "nsti-college-management-system",
+  "name": "nsti-college-management-backend",
   "version": "1.0.0",
-  "description": "NSTI College Management System with MERN Stack",
+  "description": "Backend for NSTI College Management System - A comprehensive college management system built with MERN stack",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server.js",
     "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "cd client && npm run build",
-    "install-client": "cd client && npm install"
-  },
-  "dependencies": {
-    "axios": "^1.10.0",
-    "bcryptjs": "^2.4.3",
-    "colors": "^1.4.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "express-validator": "^7.0.1",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.5.0",
-    "multer": "^1.4.5-lts.1"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.0",
-    "nodemon": "^3.0.1"
+    "seed": "node scripts/seedData.js"
   },
   "keywords": [
-    "college",
-    "management",
-    "system",
-    "mern",
-    "nsti"
+    "college-management",
+    "mern-stack",
+    "nodejs",
+    "express",
+    "mongodb",
+    "react"
   ],
   "author": "NSTI Development Team",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express-validator": "^7.0.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.4",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }

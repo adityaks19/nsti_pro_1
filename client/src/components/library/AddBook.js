@@ -12,7 +12,12 @@ import {
   Divider,
   Chip,
   InputAdornment,
-  CircularProgress
+  CircularProgress,
+  TextField,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem
 } from '@mui/material';
 import {
   Save as SaveIcon,
@@ -30,7 +35,6 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios';
-// Removed LibraryLayout - using main DashboardLayout instead
 import { StandardTextField, StandardSelect, StandardNumberField } from '../common/StandardInput';
 
 const AddBook = () => {
